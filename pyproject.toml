@@ -1,0 +1,16 @@
+[project]
+name = "nanoassembler"
+version = "0.1.0"
+description = "GUI for Oxford Nanopore assembly and reference analysis of small genomes on Apple Silicon"
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.6"]
+
+[project.scripts]
+nanoassembler = "nanoassembler.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
